@@ -1,77 +1,196 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Zoe by DistributedSystemsGroup</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zoe - Analytics as a Service</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
   </head>
+<!-- NAVBAR
+================================================== -->
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Zoe</h1>
-      <h2 class="project-tagline">Zoe: Container Analytics as a Service</h2>
-      <a href="https://github.com/DistributedSystemsGroup/zoe" class="btn">View on GitHub</a>
-      <a href="https://github.com/DistributedSystemsGroup/zoe/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/DistributedSystemsGroup/zoe/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <section class="main-content">
-      <h1>
-<a id="zoe---container-based-analytics-as-a-service" class="anchor" href="#zoe---container-based-analytics-as-a-service" aria-hidden="true"><span class="octicon octicon-link"></span></a>Zoe - Container-based Analytics as a Service</h1>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Zoe</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://github.com/DistributedSystemsGroup/zoe">Clone from GitHub</a></li>
+                <li><a href="http://docs.zoe-analytics.eu">Documentation</a></li>
+                <li><a href="http://distsysgroup.wordpress.com">About us</a></li>
+                <li><a href="mailto:daniele.venzano@eurecom.fr">Contact</a></li>
+<!--                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-<p>Zoe provides a simple way to provision data analytics applications using Docker Swarm.</p>
+      </div>
+    </div>
 
-<p>This is the main repository, it contains the documentation and a number of scripts, useful to install and develop Zoe.</p>
 
-<p>We are in the process of updating documentation and scripts. For now you can refer to the version tagged 0.8.92 in this repository,
-when all components where still together.</p>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+<!--      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      </ol>-->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/containers.jpg" alt="Containers everywhere">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Zoe - Analytics as a Service</h1>
+              <p>Zoe provides a simple way to provision data analytics clusters and workflows using Docker containers.</p>
+              <p><a class="btn btn-lg btn-primary" href="mailto:daniele.venzano@eurecom.fr" role="button">Contact us</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>--><!-- /.carousel -->
 
-<p>Resources:</p>
 
-<ul>
-<li> Main website: <a href="http://zoe-analytics.eu">http://zoe-analytics.eu</a>
-</li>
-<li> Documentation: <a href="http://docs.zoe-analytics.eu">http://docs.zoe-analytics.eu</a>
-</li>
-<li> How to install: <a href="http://zoe-analytics.readthedocs.org/en/latest/install.html">http://zoe-analytics.readthedocs.org/en/latest/install.html</a> (refers to the 0.8.92 version)</li>
-</ul>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<p>Zoe is a distributed application and each component is developed in a separate Git repository.</p>
+    <div class="container marketing">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">DockerCon EU.</h2>
+        <p class="lead">Zoe has been presented at the DockerCon EU 2015 event in Barcelona! Here are the slides used to present the project to the Docker community:</p>
+        <iframe src="//www.slideshare.net/slideshow/embed_code/key/82f9wejEx0H0bM" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/DanieleVenzano/zoe-swarming-spark-applications-55461559" title="Zoe - Swarming Spark applications" target="_blank">Zoe - Swarming Spark applications</a> </strong> from <strong><a href="//www.slideshare.net/DanieleVenzano" target="_blank">Daniele Venzano</a></strong> </div>
+      </div>
+      </div>
 
-<ul>
-<li> Zoe clients: <a href="https://github.com/DistributedSystemsGroup/zoe-client">https://github.com/DistributedSystemsGroup/zoe-client</a>
-</li>
-<li> Zoe scheduler: <a href="https://github.com/DistributedSystemsGroup/zoe-scheduler">https://github.com/DistributedSystemsGroup/zoe-scheduler</a>
-</li>
-<li> Zoe object storage: <a href="https://github.com/DistributedSystemsGroup/zoe-object-storage">https://github.com/DistributedSystemsGroup/zoe-object-storage</a>
-</li>
-</ul>
 
-<p>Zoe can use any Docker image, but we provide some for the pre-configured applications available in the web interface:</p>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/chrono.png" alt="Chrono on fire" width="140" height="140">
+          <h2>Fast</h2>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/easy.png" alt="Mouse" width="140" height="140">
+          <h2>Easy to use</h2>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/smart.png" alt="Smart ideas" width="140" height="140">
+          <h2>Smart</h2>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-<ul>
-<li> Docker images: <a href="https://github.com/DistributedSystemsGroup/zoe-docker-images">https://github.com/DistributedSystemsGroup/zoe-docker-images</a>
-</li>
-</ul>
+      <!-- START THE FEATURETTES -->
 
-<p>|Documentation Status|</p>
+      <hr class="featurette-divider">
 
-<p>Zoe is licensed under the terms of the Apache 2.0 license.</p>
 
-<p>.. |Documentation Status| image:: <a href="https://readthedocs.org/projects/zoe-analytics/badge/?version=latest">https://readthedocs.org/projects/zoe-analytics/badge/?version=latest</a>
-   :target: <a href="https://readthedocs.org/projects/zoe-analytics/?badge=latest">https://readthedocs.org/projects/zoe-analytics/?badge=latest</a></p>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Fast. <span class="text-muted">New clusters in seconds.</span></h2>
+          <p class="lead">Zoe can create a fully configured Spark cluster, with 20 compute nodes and an iPython notebook in under five seconds.</p>
+        </div>
+<!--        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>-->
+      </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/DistributedSystemsGroup/zoe">Zoe</a> is maintained by <a href="https://github.com/DistributedSystemsGroup">DistributedSystemsGroup</a>.</span>
+      <hr class="featurette-divider">
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Easy to use. <span class="text-muted">A few clicks to start.</span></h2>
+          <p class="lead">Use the web interface for launching complex data exploration frameworks in a few clicks, or use the APIs to call Zoe from your own scripts.</p>
+        </div>
+<!--        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Smart. <span class="text-muted">Advanced scheduling.</span></h2>
+          <p class="lead">Zoe is built from the start to make full use of the available capacity in your Docker Swarm cluster. Not only Zoe is smart in placing containers, but when resources are exhausted, Zoe will queue new requests using state of the art scheduling algorithms.</p>
+        </div>
+<!--        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>-->
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Website &copy; 2015 Daniele Venzano, Eurecom &middot;
+        <a href="http://bigfootproject.eu">Bigfoot</a>, <a href="www.iostack.eu">IOStack</a>, funded by the <a href="http://ec.europa.eu/programmes/horizon2020/">EU Commission</a></p>
       </footer>
 
-    </section>
+    </div><!-- /.container -->
 
-  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68856151-1', 'auto');
+                  ga('send', 'pageview');
+
+    </script>
+
   </body>
 </html>
