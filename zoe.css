@@ -110,7 +110,8 @@ div.featurettes {
     clear: both;
     width: 90%;
     margin: 0 auto;
-    overflow: auto;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 hr.featurette-divider {
@@ -123,7 +124,7 @@ hr.featurette-divider {
 }
 
 div.featurette {
-    width: 60%;
+    width: 45%;
 }
 
 div.left {
@@ -150,6 +151,7 @@ span.muted {
 div.featurette p {
     font-size: 16pt;
     color: #222;
+    text-align: justify;
 }
 
 hr.topic-divider {
@@ -174,4 +176,15 @@ div.column-half {
 div.news h2 {
     font-size: 30pt;
     font-weight: normal;
+}
+
+div.screenshot {
+    float: left;
+    width: 51%;
+    margin-left: 40px;
+}
+
+div.screenshot img {
+    width: 100%;
+    margin-top: 20px;
 }

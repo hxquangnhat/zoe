@@ -29,51 +29,46 @@
             </div>
 
             <div class="header-caption">
-                <h1>Zoe - Analytics as a Service</h1>
+                <h1>Zoe - Analytics on demand</h1>
                 <p>Zoe provides a simple way to provision data analytics clusters and workflows using Docker containers.</p>
                 <p><a class="button" href="mailto:daniele.venzano@eurecom.fr">Contact us</a></p>
             </div>
         </div>
 
-    <!-- Marketing messages -->
-
-    <div class="marketing">
-        <div class="column-third">
-          <img src="images/chrono.png" alt="Chrono on fire">
-          <h2>Fast</h2>
-        </div>
-        <div class="column-third">
-          <img src="images/easy.png" alt="Mouse">
-          <h2>Easy to use</h2>
-        </div>
-        <div class="column-third">
-          <img src="images/smart.png" alt="Smart ideas">
-          <h2>Smart</h2>
-        </div>
-    </div>
-
     <!-- START THE FEATURETTES -->
 
     <div class="featurettes">
+
+      <div class="featurette left">
+          <h2 class="featurette-heading">Easy to use. <span class="muted">A few clicks to start.</span></h2>
+          <p class="lead">Use the web interface for launching complex data exploration frameworks in a few clicks, or use the APIs to call Zoe from your own scripts.</p>
+          <p>Zoe is independent from applications. A generic application description language is used to build compositions of analytics services, define resource constraints and configuration options.</p>
+          <p>The Zoe Scheduler takes the application description and translates it into Docker containers.</p>
+      </div>
+      <div class="screenshot">
+        <img src="images/zoe_web.png" alt="Web interface screenshot">
+      </div>
+
       <hr class="featurette-divider">
 
       <div class="featurette left">
           <h2 class="featurette-heading">Fast. <span class="muted">New clusters in seconds.</span></h2>
-          <p class="lead">Zoe can create a fully configured Spark cluster, with 20 compute nodes and an iPython notebook in under five seconds.</p>
+          <p class="lead">Zoe can create a fully configured Spark cluster, with 20 compute nodes and an iPython notebook in a few seconds.</p>
+          <p>In this video we show the user-facing command line interface to Zoe and demonstrate how fast and easy it is to define and start a new application.</p>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette right">
-          <h2 class="featurette-heading">Easy to use. <span class="muted">A few clicks to start.</span></h2>
-          <p class="lead">Use the web interface for launching complex data exploration frameworks in a few clicks, or use the APIs to call Zoe from your own scripts.</p>
-      </div>
-
+        <div class="screenshot">
+            <iframe width="660" height="385" src="https://www.youtube.com/embed/F425824yXSc" frameborder="0" allowfullscreen></iframe>
+        </div>
       <hr class="featurette-divider">
 
       <div class="featurette left">
           <h2 class="featurette-heading">Smart. <span class="muted">Advanced scheduling.</span></h2>
           <p class="lead">Zoe is built from the start to make full use of the available capacity in your Docker Swarm cluster. Not only Zoe is smart in placing containers, but when resources are exhausted, Zoe will queue new requests using state of the art scheduling algorithms.</p>
+          <p>Zoe is streamlined for maximum efficiency. As soon as an application is ready for execution, it is translated in Docker commands and sent to Swarm. An optional private image registry can increase even more the startup performance of new applications.</p>
+          <p>Zoe can provision compute-only applications, but also data layers, like Hadoop HDFS. We keep testing the Zoe concept composing new services and frameworks and extending Zoe's capabilities. Stay tuned for more!</p>
+      </div>
+      <div class="screenshot">
+        <img src="images/zoe_arch.png" alt="Zoe architecture">
       </div>
     </div>
 
@@ -82,6 +77,9 @@
     <!-- News and updates -->
     <div class="news">
         <h2>News and updates</h2>
+        <h3>Zoe in production at Eurecom</h3>
+        <p>We are using Zoe to drive the laboratory sessions of the new Advanced Machine Learning course at Eurecom. About 50 students interact with Jupyter notebooks and Spark clusters, learning the basis of data science with real-world use cases. All the course material is <a href="https://github.com/michiard/AML-COURSE">available on GitHub</a>, feel free to have a look and contribute!</p>
+
         <h3>Zoe at DockerCon EU 2015</h3>
         <p>Zoe has been presented at the DockerCon EU 2015 event in Barcelona! Here are the slides used to present the project to the Docker community:</p>
         <div class="column-half">
