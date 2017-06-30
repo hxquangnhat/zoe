@@ -137,6 +137,12 @@ div.right {
     float: right;
 }
 
+div.wide {
+    width: 75%;
+    clear: both;
+    float: left;
+}
+
 h2.featurette-heading {
     font-size: 30pt;
     font-weight: normal;
@@ -187,4 +193,17 @@ div.screenshot {
 div.screenshot img {
     width: 100%;
     margin-top: 20px;
+}
+
+div.zapp-floats {
+    margin-top: 25px;
+}
+
+div.zapp {
+    margin: 0 20px;
+    float: left;
+}
+
+div.zapp img {
+    height: 150px;
 }

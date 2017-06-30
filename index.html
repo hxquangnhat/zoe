@@ -22,9 +22,10 @@
                 <ul class="nav">
                     <li id="zoe"><a href="#">Zoe</a></li>
                     <li><a href="https://github.com/DistributedSystemsGroup/zoe">Clone from GitHub</a></li>
-                    <li><a href="https://github.com/DistributedSystemsGroup/zoe-applications">Zoe Applications</a></li>
+                    <li><a href="#zapps">Zoe Applications</a></li>
                     <li><a href="http://docs.zoe-analytics.eu">Documentation</a></li>
                     <li><a href="http://distsysgroup.wordpress.com">About us</a></li>
+                    <li><a href="#news">News</a></li>
                     <li><a href="http://www.freelists.org/list/zoe">Mailing list</a></li>
                 </ul>
             </div>
@@ -72,13 +73,42 @@
       <div class="screenshot">
         <img src="images/zoe_arch.png" alt="Zoe architecture">
       </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette wide">
+            <a name="zapps"></a>
+            <h2 class="featurette-heading">Zoe applications</h2>
+            <div class="zapp-floats">
+                <div class="zapp"><a href="https://gitlab.eurecom.fr/zoe/zapp-tensorflow/"><img src="https://gitlab.eurecom.fr/zoe/zapp-tensorflow/raw/master/logo.png" alt="Tensorflow logo"></a></div>
+                <div class="zapp"><a href="https://gitlab.eurecom.fr/zoe/zapp-spark/"><img src="https://gitlab.eurecom.fr/zoe/zapp-spark/raw/master/logo.png" alt="Spark logo"></a></div>
+                <div class="zapp"><a href="https://gitlab.eurecom.fr/zoe/zapp-jupyter/"><img src="https://gitlab.eurecom.fr/zoe/zapp-jupyter/raw/master/logo.png" alt="Jupyter logo"></a></div>
+            </div>
+        </div>
     </div>
 
-    <hr class="topic-divider">
+        <hr class="topic-divider">
 
     <!-- News and updates -->
-    <p class="news">
+        <a name="news"></a>
+        <div class="news">
         <h2>News and updates</h2>
+        <h3>We are proud to announce the latest stable release of Zoe: 2017.06</h3>
+        The stable repository on github has been updated and you can check what’s new in the <a href="https://github.com/DistributedSystemsGroup/zoe/blob/master/CHANGELOG.md">CHANGELOG file</a>.
+
+        Please note that in this version the ZApp description format has changed. We are switching to a system were each ZApp lives in its own repository: this will make it easier to build a “ZApp Shop” kind of interface.
+        You can check new-format ZApps here:
+        <ul>
+            <li><a href="https://gitlab.eurecom.fr/zoe/zapp-tensorflow">Tensorflow</a></li>
+            <li><a href="https://gitlab.eurecom.fr/zoe/zapp-jupyter">Jupyter</a></li>
+            <li><a href="https://gitlab.eurecom.fr/zoe/zapp-boinc">Boinc</a></li>
+            <li><a href="https://gitlab.eurecom.fr/zoe/zapp-spark">Spark</a></li>
+            <li><a href="https://gitlab.eurecom.fr/zoe/zapp-memcached">Memcached</a></li>
+            <li>Many more will come...</li>
+        </ul>
+
+        For the next release, 2017.09, that will be available at the end of September, we are already hard at work. You can follow day-to-day development on our GitLab repository: https://gitlab.eurecom.fr/zoe/main/
+
         <h3>2017.03 release is now live on github!</h3>
         This release marks an important turning point for Zoe. More contributors are joining the project, merging very interesting new features. Moreover all releases are now tested through a fully automated continuous integration pipeline.
         <ul>
